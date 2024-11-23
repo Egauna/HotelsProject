@@ -5,8 +5,8 @@ class Guest:
         self.name = name
         self.email = email
         self.phone_number = phone_number
-        self.booking = None # Stores the current booking for the guest
-        self.bill = None # Stores the current bill for the guest
+        self.booking = None  # Stores the current booking for the guest
+        self.bill = None  # Stores the current bill for the guest
 
     # Books a room for the guest
     def book_room(self, room_id, check_in_date, check_out_date):
@@ -17,4 +17,12 @@ class Guest:
         }
         print(f"Guest {self.name} booked Room {room_id} form {check_in_date} to {check_out_date}.")
 
+    # Guest can request room service
     def request_room_service(self, service):
+        print(f"Guest {self.name} requested room service: {service}")
+
+    # Prints total amount due and status of the payment fo the guest
+    '''def view_bill(self, total_amount, status):
+        self.bill = {
+            "total_amount" : total_amount,
+        }'''
