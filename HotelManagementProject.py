@@ -10,3 +10,11 @@ class Guest:
 
     # Books a room for the guest
     def book_room(self, room_id, check_in_date, check_out_date):
+        self.booking = {
+            "room_id": room_id,
+            "check_in_date": check_in_date,
+            "check_out_date": check_out_date
+        }
+        print(f"Guest {self.name} booked Room {room_id} form {check_in_date} to {check_out_date}.")
+
+    def request_room_service(self, service):
