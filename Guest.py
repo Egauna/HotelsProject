@@ -29,11 +29,11 @@ class Guest:
             "total_amount" : total_amount,
         }'''
 
-#Adding the necessary main function to test Guest class attributes 
+#Adding the necessary main function to Black-Box test Guest class attributes 
 def main():
     
     guestID = int(input("Enter your Guest ID number: "))
-    name1 = input("Enter your name: ")
+    name = input("Enter your name: ")
     email = input("Enter your Email: ")
     phoneNumber = int(input("Enter your phone number: "))
 
