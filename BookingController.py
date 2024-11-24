@@ -18,7 +18,7 @@ class BookingController:
     def create_booking(self, guest, room_number, check_in, check_out):
         room = None
         for r in self.rooms:
-            if r.room_number == room_number and r.room_status:
+            if r.room_id == room_number and r.room_status:
                 room = r
                 break
         
@@ -32,6 +32,6 @@ class BookingController:
                                   status="Confirmed") 
             self.bookings.append(new_booking)
             room.update_availability(False)
-            return f"The booking has been succefully created. Booking ID: {booking_id}"
+            return f"The booking has been successfully created. Booking ID: {booking_id}"
             
         return "Room not available."
