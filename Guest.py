@@ -1,5 +1,9 @@
 # File: Guest.py
-
+# Description: This file contains the implementation of the Guest class, which contains
+#              guest's name, id, email and phone number. Also, includes methods for
+#              booking rooms, requesting room services and viewing bills.
+# Author: Raul Herrera
+# Date: 2024-11-23
 class Guest:
     def __init__(self, guest_id, name, email, phone_number):
         # Creates a new guest with their information like id, name, email, and phone number
