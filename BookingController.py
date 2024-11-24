@@ -34,4 +34,4 @@ class BookingController:
             room.update_availability(False)
             return f"The booking has been succefully created. Booking ID: {booking_id}"
             
-        return "Room not available"
+        return "Room not available."
