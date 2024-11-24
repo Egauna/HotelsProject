@@ -5,11 +5,12 @@
 # Author: Raul Herrera
 # Date: 2024-11-22
 class Room:
-    def __init__(self, room_id, room_type, price, availability_status, amenities):
+    def __init__(self, room_id, room_type, price, amenities, room_status=True):
         self.room_id = room_id
         self.room_type = room_type
         self.price = price
-        self.availability_status = availability_status
+        self.amenities = amenities
+        self.room_status = room_status
 
     # This function returns room details as a dictionary
     def get_room_info(self):
@@ -17,11 +18,12 @@ class Room:
             "room_id": self.room_id,
             "room_type": self.room_type,
             "price": self.price,
-            "availability_status": self.availability_status,
+            "amenities": self.amenities,
+            "availability_status": self.room_status,
         }
 
     # Updates the room's availability
-    def update_availability(self, status):
-        self.availability_status = status
-        status_text = "available" if status else "unavailable"
+    def update_availability(self, is_available):
+        self.room_status = is_available
+        status_text = "available" if self.room_status else "unavailable"
         print(f"Room {self.room_id} is now {status_text}.")
