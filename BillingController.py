@@ -7,7 +7,7 @@ class BillingController:
     def __init__(self):
         self.bills = []
         
-    def generatebill(self, bill_id, guest_id, booking_id, total_amount):
+    def generate_bill(self, bill_id, guest_id, booking_id, total_amount):
         new_bill = Bill(bill_id, guest_id, booking_id, total_amount)
         self.bills.append(new_bill)
         print(f"Bill {bill_id} Has been generated")

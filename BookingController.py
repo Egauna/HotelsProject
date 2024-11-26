@@ -1,5 +1,6 @@
 # File: BookingController.py
-# Description: This is file contains the main controller or main Class to create new bookings using Room, Guest, and Booking as subclasses.
+# Description: This is file contains the main controller or main Class
+# to create new bookings using Room, Guest, and Booking as subclasses.
 # Author: Enrique Gauna
 # Date: 2024-11-24
 from Room import Room
