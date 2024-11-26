@@ -1,3 +1,9 @@
+# File: staffcontroller.py
+# Description: This file contains the implementation of the staff controller class, which contains
+#              options for staff to process bookings, process room service requests, and generate reports.
+# Author: Enrique Gauna
+# Date: 2024-11-25
+
 from Room import Room
 from RoomService import RoomService
 from Booking import Booking
