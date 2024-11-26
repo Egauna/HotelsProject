@@ -1,3 +1,13 @@
+# File: StaffInterface.py
+# Description: This file contains the staff interface class
+#              In this file the staff will have the options to add rooms; change availabity status on the rooms.
+#               Add Guest information
+#               Process Bookings for Guests
+#               Process room services for Guests
+#               Generate reports pertaining Avaiable rooms
+#               an option to exit the menu
+# Author: Enrique Gauna
+# Date: 2024-11-25
 from staffcontroller import StaffController
 from Room import Room
 from Guest import Guest
