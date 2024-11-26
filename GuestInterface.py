@@ -38,7 +38,7 @@ class GuestInterface:
     def display_room_options(self):
         print("\nAvailable Rooms:")
         for room in self.booking_controller.rooms:
-            if room.availability_status:
+            if room.room_status:
                 print(
                     f"Room ID: {room.room_id}, Type: {room.room_type}, Price: ${room.price:.2f}, Amenities: {', '.join(room.amenities)}")
 
