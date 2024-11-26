@@ -1,5 +1,6 @@
 # File: BillingController.py
-# Description: This file uses Bill file as a subclass to generate bills, process payments, add charges, and get bill details.
+# Description: This file uses Bill file as a subclass to generate bills,
+# process payments, add charges, and get bill details.
 # Author: Enrique Gauna
 # Date: 2024-11-24
 from Bill import Bill

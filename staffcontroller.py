@@ -30,10 +30,10 @@ class StaffController:
         self.bookings.append(new_booking)
         print(f'Booking {booking_id} for Guest {guest_id} Confirmed')
         
-    def process_service_request(self, serivce_id, guest_id, service_type, price):
-        new_service = RoomService(serivce_id, guest_id, service_type, price)
+    def process_service_request(self, service_id, guest_id, service_type, price):
+        new_service = RoomService(service_id, guest_id, service_type, price)
         self.services.append(new_service)
-        print(f"Room Service {serivce_id} for Guest {guest_id} is added")
+        print(f"Room Service {service_id} for Guest {guest_id} is added")
         
     def generate_report(self):
         print("Generating Reports\n")
@@ -72,7 +72,7 @@ class StaffController:
         self.guests.append(guest)
         print(f"Guest {guest.guest_id} added.")
         
-if __name__ == "__main__":
+'''if __name__ == "__main__":
     controller = StaffController()
     room1 = Room(101, "Single", 100, ["WiFi", "TV"])
     room2 = Room(102, "Double", 150, ["WiFi", "TV", "Mini Bar"])
@@ -83,4 +83,4 @@ if __name__ == "__main__":
     controller.add_guest(guest1)
     controller.process_booking(1, 1, 101, "2024-12-01", "2024-12-05")
     controller.process_service_request(1, 1, "Cleaning", 20)
-    controller.generate_report()
+    controller.generate_report()'''

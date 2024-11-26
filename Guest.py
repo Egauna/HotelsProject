@@ -4,10 +4,11 @@
 #              booking rooms, requesting room services and viewing bills.
 # Author: Raul Herrera
 # Date: 2024-11-23
+import random
 class Guest:
-    def __init__(self, guest_id, name, email, phone_number):
+    def __init__(self, name, email, phone_number):
         # Creates a new guest with their information like id, name, email, and phone number
-        self.guest_id = guest_id
+        self.guest_id = random.randint(1000,9999) # Generate a random ID of 4 digits
         self.name = name
         self.email = email
         self.phone_number = phone_number
@@ -28,9 +29,13 @@ class Guest:
         print(f"Guest {self.name} requested room service: {service}")
 
     # Prints total amount due and status of the payment fo the guest
-    '''def view_bill(self, total_amount, status):
+    def view_bill(self, total_amount, status):
         self.bill = {
             "total_amount" : total_amount,
-        }'''
+            "status" : status
+        }
+        print(f"Bill for {self.name}:")
+        print(f"Total Amount: ${total_amount:.2f}")
+        print(f"Status: {status}")
 
 
