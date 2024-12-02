@@ -34,7 +34,7 @@ class Admin:
         for staff in self.staff:
             print(f"Staff ID: {staff['staff_id']} \n Name: {staff['name']} \n Role: {staff['role']}")
     
-    def viewreports(self):
+    def view_reports(self):
         print("Reports")
         for report in self.reports:
             print(report)
@@ -51,5 +51,5 @@ if __name__ == "__main__":
     Admin1.view_staff()
     Admin1.remove_staff_member(1)
     Admin1.view_staff()
-    Admin1.viewreports()
+    Admin1.view_reports()
     print(f"Hello, {Admin1.name}! you are now logged in as Admin with ID: {Admin1.admin_id}")

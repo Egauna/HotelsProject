@@ -72,15 +72,3 @@ class StaffController:
         self.guests.append(guest)
         print(f"Guest {guest.guest_id} added.")
         
-'''if __name__ == "__main__":
-    controller = StaffController()
-    room1 = Room(101, "Single", 100, ["WiFi", "TV"])
-    room2 = Room(102, "Double", 150, ["WiFi", "TV", "Mini Bar"])
-    controller.add_room(room1)
-    controller.add_room(room2)
-    
-    guest1 = Guest(1, "John Doe", "john.doe@example.com", "1234567890")
-    controller.add_guest(guest1)
-    controller.process_booking(1, 1, 101, "2024-12-01", "2024-12-05")
-    controller.process_service_request(1, 1, "Cleaning", 20)
-    controller.generate_report()'''
